@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 12vh;
+}
+
+.header__logo {
+    margin-left: 2em;
+    font-size: 3rem;
+}
+
+.header__nav-menu {
+    display: flex;
+}
+
+.header__nav-menu a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #000;
+    margin: 0 2em 0 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+}
+
+.footer__logo {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.main {
+    text-align: center;
+    min-height: 82vh;
+    background-color: #f2f2f2;
+}

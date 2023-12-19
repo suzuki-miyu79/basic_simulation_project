@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 12vh;
+}
+
+.header__logo {
+    margin-left: 2em;
+    font-size: 3rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+}
+
+.footer__logo {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.main {
+    text-align: center;
+    min-height: 82vh;
+    background-color: #f2f2f2;
+}

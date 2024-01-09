@@ -11,16 +11,32 @@
     justify-content: center;
 }
 
-.attendance__button {
-    width: 20em;
-    height: 10em;
-    border: none;
-    border-radius: 5px;
-    background: #fff;
-    color: #000;
-    cursor: pointer;
-    font-size: 2rem;
-    font-weight: bold;
+@media (min-width: 1000px) {
+    .attendance__button {
+        width: 13em;
+        height: 7em;
+        border: none;
+        border-radius: 5px;
+        background: #fff;
+        color: #000;
+        cursor: pointer;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 1300px) {
+    .attendance__button {
+        width: 18em;
+        height: 8em;
+        border: none;
+        border-radius: 5px;
+        background: #fff;
+        color: #000;
+        cursor: pointer;
+        font-size: 2rem;
+        font-weight: bold;
+    }
 }
 
 .attendance__button-top {

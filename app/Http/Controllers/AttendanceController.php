@@ -11,7 +11,11 @@ class AttendanceController extends Controller
 {
     public function index()
     {
-        $status = Status::firstOrFail();
+        // ログインしているユーザーのIDを取得
+        $user_id = auth()->user()->id;
+
+        // ログインしているユーザーに紐づくステータスレコードを取得
+        $status = Status::firstOrNew(['user_id' => $user_id]);
 
         return view('attendance', compact('status'));
     }
@@ -20,7 +24,7 @@ class AttendanceController extends Controller
     {
         $user_id = auth()->user()->id;
         $work_date = now()->toDateString();
-        $status = Status::firstOrFail();
+        $status = Status::firstOrNew(['user_id' => $user_id]);
 
         // 当日の勤怠レコードが既に存在するか確認
         $existingRecord = WorkTime::where('user_id', $user_id)
@@ -29,22 +33,6 @@ class AttendanceController extends Controller
 
         if ($existingRecord) {
             // 当日の出勤情報がすでに存在する場合の処理
-            // 勤務終開始タンがクリックされた場合、新しいレコードを作成して勤務開始時間を記録
-            if ($request->has('action') && $request->input('action') == 'work_start' && $existingRecord->work_start && $existingRecord->work_end) {
-                WorkTime::create([
-                    'user_id' => $user_id,
-                    'work_date' => $work_date,
-                    'work_start' => now()->toTimeString(),
-                    // 'work_end' は現時点では NULL
-                ]);
-
-                // $status を更新
-                $status->update([
-                    'work_started' => true,
-                ]);
-            }
-
-
             // 勤務終了ボタンがクリックされた場合、最新の勤務データに勤務終了時間を記録
             if ($request->has('action') && $request->input('action') == 'work_end') {
                 $latestRecord = WorkTime::where('user_id', $user_id)
@@ -94,20 +82,24 @@ class AttendanceController extends Controller
                     ]);
                 }
             }
+             return redirect()->route('attendance.index');
+
         } else {
             // 当日の勤務データが存在しない場合、レコードを作成して勤務開始時間を記録
-            WorkTime::create([
-                'user_id' => $user_id,
-                'work_date' => $work_date,
-                'work_start' => now()->toTimeString(),
-                // 'work_end' は現時点では NULL
-            ]);
+            if ($request->has('action') && $request->input('action') == 'work_start') {
+                WorkTime::create([
+                    'user_id' => $user_id,
+                    'work_date' => $work_date,
+                    'work_start' => now()->toTimeString(),
+                    // 'work_end' は現時点では NULL
+                ]);
 
-            // $status を更新
-            $status->update([
-                'work_started' => true,
-            ]);
+                // $status を更新
+                $status->update([
+                    'work_started' => true,
+                ]);
+            }
+            return redirect()->route('attendance.index');
         }
-        return redirect()->route('attendance.index');
     }
 }

@@ -1,9 +1,14 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AttendanceController;
 use App\Http\Controllers\AttendanceListController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
+use App\Http\Controllers\Auth\RegisteredUserController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -23,24 +28,24 @@ Route::get('/', function () {
         return app(AttendanceController::class)->index();
     } else {
         // ユーザーが未認証の場合は login ページを表示
-        return view('auth.login');
+        return redirect()->route('login');
     }
 })->name('attendance.index');
 
-// 勤怠一覧画面表示
-Route::get('/attendance-list', [AttendanceListController::class, 'showList']);
+// 認証済みであれば、各ページを表示する
+Route::middleware('auth')->group(function () {
 
-// 勤務・休憩打刻
-Route::post('/record-attendance', [AttendanceController::class, 'recordAttendance'])->name('record.attendance');
+    // 勤怠一覧画面表示
+    Route::get('/attendance-list', [AttendanceListController::class, 'showList'])->name('show.list');
 
-// Route::get('/attendance', function () {
-//     return view('attendance');
-// })->middleware(['auth', 'verified'])->name('attendance');
+    // 勤務・休憩打刻
+    Route::post('/record-attendance', [AttendanceController::class, 'recordAttendance'])->name('record.attendance');
 
-// Route::middleware('auth')->group(function () {
-//     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-//     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-//     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-// });
+    //ユーザーページ表示
+    Route::get('/users', [UserController::class, 'index'])->name('users.index');
+
+    //ユーザーごとの勤怠一覧表示
+    Route::get('/users/{user}/attendance-list', [AttendanceListController::class, 'byUserAttendance'])->name('users.attendance');
+});
 
 require __DIR__ . '/auth.php';

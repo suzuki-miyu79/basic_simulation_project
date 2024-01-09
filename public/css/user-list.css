@@ -1,0 +1,99 @@
+.user-list__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-list__heading h2 {
+    margin: 0;
+    padding: 1.5em 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+    font-size: 1.5rem;
+}
+
+.search__name {
+    display: inline-block;
+    padding-top: 3px;
+    margin: 0 1em 0 0;
+}
+
+.search__input {
+    padding: 0.5em 1em;
+    width: 15em;
+    height: 2.5em;
+    line-height: 2.5em;
+    border: 3px solid #808080;
+    border-radius: 5px;
+    appearance: none;
+    font-size: 1.5rem;
+    background-color: #f2f2f2f2;
+}
+
+.search__button {
+    margin-left: 1em;
+    height: 2.5em;
+    border: 3px solid #808080;
+    border-radius: 5px;
+    padding: 0 1em;
+
+}
+
+.search__button:hover {
+    color: #fff;
+    background-color: gray;
+    font-weight: bold;
+}
+
+table {
+    font-size: 1.5rem;
+}
+
+.list__column,
+.list__row {
+    border-top: 1px solid gray;
+}
+
+.list__column-item,
+.list__row-item {
+    padding: 1em 4em;
+}
+
+.list__column-item,
+.row-item-id,
+.row-item-name {
+    text-align: left;
+}
+
+.column-item-id,
+.row-item-id {
+    padding-left: 2em;
+}
+
+.row-item-button {
+    padding-left: 8em;
+}
+
+.list__button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #0000ff;
+    border-radius: 5px;
+    padding: 0.3em 0.7em;
+}
+
+.list__button:hover {
+    font-weight: bold;
+    color: #fff;
+    background-color: #0000ca;
+}
+
+.pagination {
+    padding-top: 1em;
+}

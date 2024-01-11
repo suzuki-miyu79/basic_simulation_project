@@ -1,7 +1,7 @@
 .attendance__heading p {
     margin: 0;
     padding: 1.5em 0;
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -11,30 +11,30 @@
     justify-content: center;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
     .attendance__button {
-        width: 13em;
+        width: 15em;
+        height: 5em;
+        border: none;
+        border-radius: 5px;
+        background: #fff;
+        color: #000;
+        cursor: pointer;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 1200px) {
+    .attendance__button {
+        width: 18em;
         height: 7em;
         border: none;
         border-radius: 5px;
         background: #fff;
         color: #000;
         cursor: pointer;
-        font-size: 2rem;
-        font-weight: bold;
-    }
-}
-
-@media (min-width: 1300px) {
-    .attendance__button {
-        width: 18em;
-        height: 8em;
-        border: none;
-        border-radius: 5px;
-        background: #fff;
-        color: #000;
-        cursor: pointer;
-        font-size: 2rem;
+        font-size: 1.2rem;
         font-weight: bold;
     }
 }

@@ -6,7 +6,7 @@
 
 .pagination_top {
     padding: 2em 0;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .pagination_top a {
@@ -24,7 +24,7 @@
 }
 
 table {
-    font-size: 1.5rem;
+    font-size: 0.8rem;
 }
 
 .list__column,
@@ -32,7 +32,7 @@ table {
     border-top: 1px solid gray;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
 
     .list__column-item,
     .list__row-item {
@@ -46,7 +46,7 @@ table {
     }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
 
     .list__column-item,
     .list__row-item {

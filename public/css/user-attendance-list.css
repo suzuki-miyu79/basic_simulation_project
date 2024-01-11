@@ -6,13 +6,13 @@
 
 body .form-row .form-control {
     width: 10em;
-    font-size: 1.5rem;
+    font-size: 0.8rem;
 }
 
 .user-attendance-list__heading h2 {
     margin: 0;
     padding: 2em 0;
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -29,7 +29,7 @@ body .form-row .form-control {
     color: #fff;
     border-radius: 5px;
     text-decoration: none;
-    padding: 0.3em 0.5em;
+    padding: 0.5em 0.5em;
 }
 
 .year-month-selection {
@@ -40,7 +40,7 @@ body .form-row .form-control {
 
 .year-month-selection,
 .list__table {
-    font-size: 1.5rem;
+    font-size: 0.8rem;
 }
 
 .list__total-column-item {
@@ -57,7 +57,7 @@ body .form-row .form-control {
     border-top: 1px solid gray;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
 
     .year-month-selection {
         width: 33.2em;
@@ -70,7 +70,7 @@ body .form-row .form-control {
 
     .list__column-item,
     .list__row-item {
-        padding: 1em 2em;
+        padding: 0.8em 2em;
     }
 
     .column-item-date,
@@ -98,7 +98,7 @@ body .form-row .form-control {
 
     .list__column-item,
     .list__row-item {
-        padding: 1em 4em;
+        padding: 0.8em 4em;
     }
 
     .column-item-date,
@@ -109,7 +109,7 @@ body .form-row .form-control {
 }
 
 .list__inner-top {
-    margin-bottom: 3.5em;
+    margin-bottom: 3em;
 }
 
 .list__inner-bottom {

@@ -6,8 +6,8 @@
 
 .user-list__heading h2 {
     margin: 0;
-    padding: 2em 0;
-    font-size: 2rem;
+    padding: 1.5em 0;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -15,7 +15,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 1.5em;
-    font-size: 1.5rem;
+    font-size: 0.8rem;
 }
 
 .search__name {
@@ -29,17 +29,17 @@
     width: 15em;
     height: 2.2em;
     line-height: 2.2em;
-    border: 3px solid #808080;
+    border: 1.5px solid #808080;
     border-radius: 5px;
     appearance: none;
-    font-size: 1.5rem;
+    font-size: 0.8rem;
     background-color: #f2f2f2f2;
 }
 
 .search__button {
     margin-left: 0.5em;
     height: 2.2em;
-    border: 3px solid #808080;
+    border: 1.5px solid #808080;
     border-radius: 5px;
     padding: 0 0.5em;
 
@@ -52,7 +52,7 @@
 }
 
 table {
-    font-size: 1.5rem;
+    font-size: 0.8rem;
 }
 
 .list__column,
@@ -62,7 +62,7 @@ table {
 
 .list__column-item,
 .list__row-item {
-    padding: 1em 4em;
+    padding: 0.8em 4em;
 }
 
 .list__column-item,
@@ -76,7 +76,7 @@ table {
     padding-left: 2em;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
     .row-item-button {
         padding-left: 6em;
     }
@@ -93,7 +93,7 @@ table {
     color: #fff;
     background-color: #0d6efd;
     border-radius: 5px;
-    padding: 0.3em 0.7em;
+    padding: 0.2em 0.7em;
 }
 
 .list__button:hover {

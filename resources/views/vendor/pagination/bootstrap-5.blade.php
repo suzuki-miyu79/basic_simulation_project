@@ -95,18 +95,9 @@
         </div>
     </nav>
     <style>
-        @media (min-width: 1000px) {
-            .page-link {
-                font-size: 1.3rem;
-                padding: 0.5em 1em;
-            }
-        }
-
-        @media (min-width: 1200px) {
-            .page-link {
-                font-size: 1.5rem;
-                padding: 0.5em 1em;
-            }
+        .page-link {
+            font-size: 0.9rem;
+            padding: 0.3em 0.8em;
         }
     </style>
 @endif

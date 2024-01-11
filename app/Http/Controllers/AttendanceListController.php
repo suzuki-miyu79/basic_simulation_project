@@ -91,7 +91,7 @@ class AttendanceListController extends Controller
         }
 
         // 合計時間をフォーマット
-       $monthlyTotalTimes = [
+        $monthlyTotalTimes = [
             'totalWorkTime' => (new WorkTime())->formatTime($monthlyTotalTimes['totalWorkTime']),
             'totalBreakTime' => (new WorkTime())->formatTime($monthlyTotalTimes['totalBreakTime']),
             'totalActualWorkTime' => (new WorkTime())->formatTime($monthlyTotalTimes['totalActualWorkTime']),

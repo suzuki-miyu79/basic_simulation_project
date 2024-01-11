@@ -17,6 +17,7 @@
                         value="{{ $selectedYearMonth }}">
                 </div>
             </form>
+            <a href="{{ route('users.index') }}" class="back__button">ユーザーページへ戻る</a>
         </div>
         <div class="list__table">
             <table class="list__inner-top">

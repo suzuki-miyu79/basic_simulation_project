@@ -11,18 +11,31 @@ body .form-row .form-control {
 
 .user-attendance-list__heading h2 {
     margin: 0;
-    padding: 1.5em 0;
+    padding: 2em 0;
     font-size: 2rem;
     font-weight: bold;
 }
 
 .form-row {
     display: flex;
-    margin-bottom: 2em;
 }
 
 .form-row label {
     padding: 6px 0;
+}
+
+.back__button {
+    background-color: #0d6efd;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 0.3em 0.5em;
+}
+
+.year-month-selection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
 }
 
 .year-month-selection,
@@ -46,6 +59,10 @@ body .form-row .form-control {
 
 @media (min-width: 1000px) {
 
+    .year-month-selection {
+        width: 33.2em;
+    }
+
     .list__total-column-item,
     .list__total-row-item {
         padding: 0.2em 2em;
@@ -64,6 +81,10 @@ body .form-row .form-control {
 }
 
 @media (min-width: 1300px) {
+
+    .year-month-selection {
+        width: 48em;
+    }
 
     .list__total-column-item,
     .list__total-row-item {

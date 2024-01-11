@@ -46,6 +46,7 @@ Route::middleware('auth')->group(function () {
 
     //ユーザーごとの勤怠一覧表示
     Route::get('/users/{user}/attendance-list', [AttendanceListController::class, 'byUserAttendance'])->name('users.attendance');
+
 });
 
 require __DIR__ . '/auth.php';

@@ -25,10 +25,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         // 毎日0:00に処理を実行
-        // $schedule->command('attendance:check')->dailyAt('0:00');
-
-        // テスト用
-        $schedule->command('attendance:check')->everyMinute();
+        $schedule->command('attendance:check')->dailyAt('0:00');
     }
 
     /**

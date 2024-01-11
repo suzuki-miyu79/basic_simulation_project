@@ -11,8 +11,8 @@
         </div>
         <div class="search">
             <form action="{{ route('users.index') }}" method="GET">
-                <p class="search__name">名前</p>
-                <input type="text" name="keyword" class="search__input" value="{{ $keyword ?? '' }}">
+                <input type="text" name="keyword" placeholder="名前" class="search__input"
+                    value="@if (isset($keyword)) {{ $keyword ?? '' }} @endif">
                 <button type="submit" class="search__button">検索</button>
             </form>
         </div>
@@ -33,6 +33,6 @@
                 @endforeach
             </table>
         </div>
-        <div class="pagination">{{ $users->links('vendor.pagination.bootstrap-5') }}</div>
+        <div class="pagination">{{ $users->appends(['keyword' => $keyword])->links('vendor.pagination.bootstrap-5') }}</div>
     </div>
 @endsection

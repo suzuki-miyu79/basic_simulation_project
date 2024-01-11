@@ -19,7 +19,7 @@
             <ul class="header__nav-menu">
                 <li><a href="/">ホーム</a></li>
                 <li><a href="/attendance-list">日付一覧</a></li>
-                <li><a href="/users">ユーザーページ</a></li>
+                <li><a href="{{ route('users.index', ['clear_search' => 1]) }}">ユーザーページ</a></li>
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
                     <li>

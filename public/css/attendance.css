@@ -13,8 +13,8 @@
 
 @media (min-width: 800px) {
     .attendance__button {
-        width: 15em;
-        height: 5em;
+        width: 17em;
+        height: 7em;
         border: none;
         border-radius: 5px;
         background: #fff;
@@ -27,8 +27,8 @@
 
 @media (min-width: 1200px) {
     .attendance__button {
-        width: 18em;
-        height: 7em;
+        width: 19em;
+        height: 8em;
         border: none;
         border-radius: 5px;
         background: #fff;

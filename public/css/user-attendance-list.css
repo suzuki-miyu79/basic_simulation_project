@@ -29,7 +29,7 @@ body .form-row .form-control {
     color: #fff;
     border-radius: 5px;
     text-decoration: none;
-    padding: 0.5em 0.5em;
+    padding: 0.4em 0.5em;
 }
 
 .year-month-selection {
@@ -80,7 +80,7 @@ body .form-row .form-control {
     }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
 
     .year-month-selection {
         width: 48em;

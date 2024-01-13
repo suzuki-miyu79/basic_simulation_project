@@ -96,7 +96,7 @@
     </nav>
     <style>
         .page-link {
-            font-size: 1rem;
+            font-size: 1.2rem;
             padding: 0.3em 0.8em;
         }
     </style>

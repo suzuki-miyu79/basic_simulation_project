@@ -11,6 +11,7 @@
         </div>
         <div class="year-month-selection">
             <form action="{{ route('users.attendance', $user) }}" method="get">
+                @csrf
                 <div class="form-row">
                     <label for="year_month">年月選択：</label>
                     <input type="month" name="year_month" id="year_month" class="form-control"

@@ -11,6 +11,7 @@
         </div>
         <div class="search">
             <form action="{{ route('users.index') }}" method="GET">
+                @csrf
                 <input type="text" name="keyword" placeholder="キーワード検索（名前）" class="search__input"
                     value="@if (isset($keyword)) {{ $keyword ?? '' }} @endif">
                 <button type="submit" class="search__button">検索</button>

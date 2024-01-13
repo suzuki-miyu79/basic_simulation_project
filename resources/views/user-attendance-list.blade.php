@@ -50,8 +50,6 @@
                 @endforeach
             </table>
         </div>
-        {{-- <div class="pagination">
-            {{ $workTimes->appends(['year_month' => $selectedYearMonth])->links('vendor.pagination.bootstrap-5') }}</div> --}}
     </div>
     <script src="{{ asset('js/attendance-list.js') }}"></script>
 @endsection

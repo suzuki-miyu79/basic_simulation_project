@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Pagination\LengthAwarePaginator;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Models\WorkTime;
 use App\Models\User;

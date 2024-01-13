@@ -21,6 +21,7 @@
                 <tr class="list__column">
                     <th class="list__column-item column-item-id">ID</th>
                     <th class="list__column-item">名前</th>
+                    <th class="list__column-item column-item-button">勤怠一覧</th>
                 </tr>
                 @foreach ($users as $user)
                     <tr class="list__row">

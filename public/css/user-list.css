@@ -77,12 +77,16 @@ table {
 }
 
 @media (min-width: 800px) {
+
+    .column-item-button,
     .row-item-button {
         padding-left: 6em;
     }
 }
 
 @media (min-width: 1200px) {
+
+    .column-item-button,
     .row-item-button {
         padding-left: 12em;
     }

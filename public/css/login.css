@@ -1,6 +1,6 @@
 .login__content {
     margin: 0;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .login__heading {
@@ -10,12 +10,12 @@
 .login__heading h2 {
     margin: 0;
     padding-top: 2em;
-    padding-bottom: 1.5em;
-    font-size: 1.2rem;
+    padding-bottom: 1em;
+    font-size: 1.5rem;
 }
 
 .login-form__input {
-    margin-bottom: 1.7em;
+    margin-bottom: 1.3em;
 }
 
 .login-form__button {
@@ -30,7 +30,7 @@
     border: 2px solid #808080;
     border-radius: 5px;
     appearance: none;
-    font-size: 0.8rem;
+    font-size: 1rem;
     background-color: #f2f2f2f2;
 }
 
@@ -47,7 +47,7 @@ x-input-error {
     background: #0000ff;
     color: #fff;
     cursor: pointer;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .none-account {

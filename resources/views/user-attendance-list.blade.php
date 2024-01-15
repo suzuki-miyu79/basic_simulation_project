@@ -36,7 +36,7 @@
             </table>
             <table class="list__inner-bottom">
                 <tr class="list__column">
-                    <th class="list__column-item column-item-date">月日</th>
+                    <th class="list__column-item column-item-date">年月日</th>
                     <th class="list__column-item">勤務時間</th>
                     <th class="list__column-item">休憩時間</th>
                     <th class="list__column-item">実労働時間</th>

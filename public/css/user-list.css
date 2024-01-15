@@ -63,10 +63,6 @@ table {
 .list__column-item,
 .list__row-item {
     padding: 0.8em 4em;
-}
-
-.list__column-item,
-.list__row-item {
     text-align: left;
 }
 

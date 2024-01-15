@@ -66,8 +66,7 @@ table {
 }
 
 .list__column-item,
-.row-item-id,
-.row-item-name {
+.list__row-item {
     text-align: left;
 }
 

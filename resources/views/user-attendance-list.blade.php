@@ -24,7 +24,7 @@
             <table class="list__inner-top">
                 <tr class="list__total-column">
                     <th class="list__total-column-item total-column-item-date" rowspan="2">月別合計</th>
-                    <th class="list__total-column-item">勤務時間</th>
+                    <th class="list__total-column-item">就業時間</th>
                     <th class="list__total-column-item">休憩時間</th>
                     <th class="list__total-column-item">実労働時間</th>
                 </tr>
@@ -37,7 +37,7 @@
             <table class="list__inner-bottom">
                 <tr class="list__column">
                     <th class="list__column-item column-item-date">年月日</th>
-                    <th class="list__column-item">勤務時間</th>
+                    <th class="list__column-item">就業時間</th>
                     <th class="list__column-item">休憩時間</th>
                     <th class="list__column-item">実労働時間</th>
                 </tr>

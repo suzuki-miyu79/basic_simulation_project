@@ -1,6 +1,6 @@
 
 
-# Atte（アプリケーション名）
+# アプリケーション名：Atte
 - 勤怠管理システム
 ![Atte_top_image](https://github.com/suzuki-miyu79/basic_simulation_project/assets/144597636/c47a8d01-5c8d-4edf-81d3-658ffbcc52e9)
 

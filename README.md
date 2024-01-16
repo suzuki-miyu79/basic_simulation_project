@@ -24,7 +24,7 @@
 - Laravel 10.35.0
 
 ## 使用言語
-- HTML/CSS/PHP(8.1.2)/JavaScript
+- HTML/CSS/PHP(8.1.2)
 
 ## テーブル設計
 ![table_image](https://github.com/suzuki-miyu79/basic_simulation_project/assets/144597636/1bb54bc1-b7fc-44b1-a562-3df0f91da80e)

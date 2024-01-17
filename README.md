@@ -1,6 +1,4 @@
-
-
-# アプリケーション名：Atte
+# Atte
 - 勤怠管理システム
 ![Atte_top_image](https://github.com/suzuki-miyu79/basic_simulation_project/assets/144597636/c47a8d01-5c8d-4edf-81d3-658ffbcc52e9)
 
@@ -21,13 +19,25 @@
 - ページネーション機能
 
 ## 使用技術（実行環境）
+### プログラミング言語
+フロントエンド：
+
+- HTML/CSS
+
+バックエンド：
+
+- PHP(8.1.2)
+### フレームワーク
 - Laravel 10.35.0
 
-## 使用言語
-- HTML/CSS/PHP(8.1.2)
+### データベース
+- MySQL
 
 ## テーブル設計
 ![table_image](https://github.com/suzuki-miyu79/basic_simulation_project/assets/144597636/1bb54bc1-b7fc-44b1-a562-3df0f91da80e)
 
 ## ER図
 ![er](https://github.com/suzuki-miyu79/basic_simulation_project/assets/144597636/97afd063-8e80-4740-8a47-4a45584774e3)
+
+# 環境構築
+

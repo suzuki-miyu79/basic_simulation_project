@@ -30,8 +30,8 @@
 ### フレームワーク
 - Laravel 10.35.0
 
-### データベース
-- MySQL
+### デーベース
+- MySQL 8.0
 
 ## テーブル設計
 ![table_image](https://github.com/suzuki-miyu79/basic_simulation_project/assets/144597636/1bb54bc1-b7fc-44b1-a562-3df0f91da80e)

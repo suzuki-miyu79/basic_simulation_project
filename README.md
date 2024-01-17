@@ -59,6 +59,7 @@
 - 次の設定をdocker-compose.ymlに追加します。
 
    phpmyadmin:
+  
         image: phpmyadmin/phpmyadmin
         links:
             - mysql:mysql

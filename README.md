@@ -42,9 +42,8 @@
 # 環境構築
 #### 1.Laravel Sailをインストール
 - Laravel sailをインストールするディレクトリに移動し、Laravel sailをインストールします。
-- 
+  
 　curl -s "https://laravel.build/basic_simulation_project" | bash
-
 
 #### 2.Laravel sailを起動する
 - 「basic_simulation_project」ディレクトリへ移動し、Laravel sailを起動するコマンドを実行します。
@@ -52,3 +51,19 @@
 　cd basic_simulation_project
  
 　./vendor/bin/sail up
+
+ #### 3.docker-compose.ymlを編集し、phpMyAdminを追加する
+ - 次の設定をdocker-compose.ymlに追加します。
+
+   phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        links:
+            - mysql:mysql
+        ports:
+            - 8080:80
+        environment:
+            MYSQL_USERNAME: '${DB_USERNAME}'
+            MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
+            PMA_HOST: mysql
+        networks:
+            - sail

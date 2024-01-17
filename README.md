@@ -10,7 +10,7 @@
 
 本番環境：http://43.207.106.146/
 
-#### 本番環境テスト用アカウント
+### 本番環境テスト用アカウント
 - メールアドレス：aka@abc
 - パスワード：12345678
 
@@ -22,15 +22,15 @@
 - ページネーション機能
 
 ## 使用技術（実行環境）
-#### プログラミング言語
+### プログラミング言語
 - フロントエンド：HTML/CSS
 
 - バックエンド：PHP(8.1.2)
 
-#### フレームワーク
+### フレームワーク
 - Laravel 10.35.0
 
-#### データベース
+### データベース
 - MySQL
 
 ## テーブル設計
@@ -40,22 +40,22 @@
 ![er](https://github.com/suzuki-miyu79/basic_simulation_project/assets/144597636/97afd063-8e80-4740-8a47-4a45584774e3)
 
 # 環境構築
-#### 1．Laravel Sailをインストール
+### 1．Laravel Sailをインストール
 - Laravel sailをインストールするディレクトリに移動し、Laravel sailをインストールします。
   
 　curl -s "https://laravel.build/basic_simulation_project" | bash
 
-#### 2．Laravel sailを起動する
+### 2．Laravel sailを起動する
 - 「basic_simulation_project」ディレクトリへ移動し、Laravel sailを起動するコマンドを実行します。
   
 　cd basic_simulation_project
  
 　./vendor/bin/sail up
 
-#### 3．環境変数の変更
+### 3．環境変数の変更
 - .env.exampleをコピーして.envを作成し、環境変数を変更します。
 
-#### 4．phpMyAdminを追加する
+### 4．phpMyAdminを追加する
 - 次の設定をdocker-compose.ymlに追加します。
 
    phpmyadmin:
@@ -72,7 +72,7 @@
         networks:
             - sail
 
-#### 5．Laravel Breeze(ユーザー認証パッケージ)のインストール
+### 5．Laravel Breeze(ユーザー認証パッケージ)のインストール
 - larabel/breezeのパッケージを追加します。
 
   ./vendor/bin/sail composer require larabel/breeze --dev
@@ -81,12 +81,12 @@
 
   ./vendor/bin/sail artisan breeze:install
 
-#### 6．migrateコマンドの実行
+### 6．migrateコマンドの実行
 - マイグレーションファイルの内容をデータベースに反映させます。
 
   ./vendor/bin/sail artisan migrate
 
-#### 7．ダミーデータの作成
+### 7．ダミーデータの作成
 - シーディングでダミーデータを作成します。
 
   ./vendor/bin/sail artisan db:seed

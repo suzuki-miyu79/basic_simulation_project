@@ -58,6 +58,7 @@
 #### 4．phpMyAdminを追加する
 - 次の設定をdocker-compose.ymlに追加します。
 
+
    phpmyadmin:
    
         image: phpmyadmin/phpmyadmin

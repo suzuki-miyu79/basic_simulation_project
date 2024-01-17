@@ -41,14 +41,12 @@
 
 # 環境構築
 #### 1.Laravel Sailをインストール
-　Laravel sailをインストールするディレクトリに移動し、Laravel sailをインストールします。
- 
+- Laravel sailをインストールするディレクトリに移動し、Laravel sailをインストールします。
 　curl -s "https://laravel.build/basic_simulation_project" | bash
 
 
 #### 2.Laravel sailを起動する
-　「basic_simulation_project」ディレクトリへ移動し、Laravel sailを起動するコマンドを実行します。
-
+- 「basic_simulation_project」ディレクトリへ移動し、Laravel sailを起動するコマンドを実行します。
 　cd basic_simulation_project
  
 　./vendor/bin/sail up

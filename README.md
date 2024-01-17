@@ -40,30 +40,63 @@
 ![er](https://github.com/suzuki-miyu79/basic_simulation_project/assets/144597636/97afd063-8e80-4740-8a47-4a45584774e3)
 
 # 環境構築
-#### 1.Laravel Sailをインストール
+#### 1．Laravel Sailをインストール
 - Laravel sailをインストールするディレクトリに移動し、Laravel sailをインストールします。
   
 　curl -s "https://laravel.build/basic_simulation_project" | bash
 
-#### 2.Laravel sailを起動する
+#### 2．Laravel sailを起動する
 - 「basic_simulation_project」ディレクトリへ移動し、Laravel sailを起動するコマンドを実行します。
   
 　cd basic_simulation_project
  
 　./vendor/bin/sail up
 
- #### 3.docker-compose.ymlを編集し、phpMyAdminを追加する
- - 次の設定をdocker-compose.ymlに追加します。
+#### 3．環境変数の変更
+- .env.exampleをコピーして.envを作成し、環境変数を変更します。
+
+#### 4．phpMyAdminを追加する
+- 次の設定をdocker-compose.ymlに追加します。
 
    phpmyadmin:
+   
         image: phpmyadmin/phpmyadmin
+   
         links:
+   
             - mysql:mysql
+   
         ports:
+   
             - 8080:80
+   
         environment:
+   
             MYSQL_USERNAME: '${DB_USERNAME}'
+   
             MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
+   
             PMA_HOST: mysql
+   
         networks:
+   
             - sail
+
+#### 5．Laravel Breeze(ユーザー認証パッケージ)のインストール
+- larabel/breezeのパッケージを追加します。
+
+  ./vendor/bin/sail composer require larabel/breeze --dev
+
+- breezeをインストールします。
+
+  ./vendor/bin/sail artisan breeze:install
+
+#### 6．migrateコマンドの実行
+- マイグレーションファイルの内容をデータベースに反映させます。
+
+  ./vendor/bin/sail artisan migrate
+
+#### 7．ダミーデータの作成
+- シーディングでダミーデータを作成します。
+
+  ./vendor/bin/sail artisan db:seed

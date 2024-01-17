@@ -7,7 +7,9 @@
 
 ## アプリケーションURL
 開発環境：http://localhost/
+
 本番環境：http://43.207.106.146/
+
 #### 本番環境テスト用アカウント
 - メールアドレス：aka@abc
 - パスワード：12345678
@@ -38,4 +40,15 @@
 ![er](https://github.com/suzuki-miyu79/basic_simulation_project/assets/144597636/97afd063-8e80-4740-8a47-4a45584774e3)
 
 # 環境構築
+#### 1.Laravel Sailをインストール
+　Laravel sailをインストールするディレクトリに移動し、Laravel sailをインストールします。
+ 
+　curl -s "https://laravel.build/basic_simulation_project" | bash
 
+
+#### 2.Laravel sailを起動する
+　「basic_simulation_project」ディレクトリへ移動し、Laravel sailを起動するコマンドを実行します。
+
+　cd basic_simulation_project
+ 
+　./vendor/bin/sail up

@@ -58,7 +58,6 @@
 #### 4．phpMyAdminを追加する
 - 次の設定をdocker-compose.ymlに追加します。
 
-
    phpmyadmin:
    
         image: phpmyadmin/phpmyadmin
@@ -72,15 +71,11 @@
             - 8080:80
    
         environment:
-   
             MYSQL_USERNAME: '${DB_USERNAME}'
-   
             MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
-   
             PMA_HOST: mysql
    
         networks:
-   
             - sail
 
 #### 5．Laravel Breeze(ユーザー認証パッケージ)のインストール

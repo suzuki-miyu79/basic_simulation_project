@@ -59,22 +59,15 @@
 - 次の設定をdocker-compose.ymlに追加します。
 
    phpmyadmin:
-   
         image: phpmyadmin/phpmyadmin
-   
         links:
-   
             - mysql:mysql
-   
         ports:
-   
             - 8080:80
-   
         environment:
             MYSQL_USERNAME: '${DB_USERNAME}'
             MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
             PMA_HOST: mysql
-   
         networks:
             - sail
 
